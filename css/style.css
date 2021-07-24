@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap");
+:root {
+  --main-bg: hsl(222, 26%, 31%);
+  --main-bg2: hsl(0, 0%, 90%);
+  --main-bg3: hsl(268, 75%, 9%);
+  --main-bg2-sec: hsl(0, 5% , 81%);
+  --bg3-digits:hsl(52, 100%, 62%); }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Spartan" , sans-serif;
+  font-weight: 700; }
+
+body {
+  background-color: var(--main-bg);
+  max-width: 1440px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+h3 {
+  color: #fff; }
+
+.theme {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  align-items: center; }
+  .theme-selection {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .theme-selection p {
+      color: #fff;
+      margin-right: 1rem; }
+
+.right {
+  display: flex; }
+  .right p {
+    margin: 5px;
+    cursor: pointer; }
+
+.box {
+  height: 15px;
+  width: 60px;
+  background-color: #232c43;
+  border-radius: 7px;
+  position: relative; }
+
+#circle {
+  height: 15px;
+  width: 15px;
+  background-color: #d03f2f;
+  border-radius: 10px;
+  position: absolute; }
+
+.screen {
+  width: 450px; }
+  @media only screen and (max-width: 480px) {
+    .screen {
+      width: 326px; } }
+
+#screen {
+  height: 90px;
+  width: 100%;
+  background-color: #182034;
+  border: none;
+  margin: 20px 0;
+  padding-right: 1rem;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 2rem;
+  text-align: right; }
+  @media only screen and (max-width: 480px) {
+    #screen {
+      padding-right: .8rem; } }
+
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+  background-color: #232c43;
+  padding: 10px 5px; }
+  @media only screen and (max-width: 480px) {
+    .btn-container {
+      width: 326px; } }
+
+button {
+  width: 5.6rem;
+  margin: 10px 10px;
+  padding: 10px 15px 9px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #eae3dc;
+  box-shadow: 0px 3px 0px 0px #b4a597; }
+  @media only screen and (max-width: 480px) {
+    button {
+      width: 4rem;
+      padding: 12px 8px;
+      margin: 10px 7px; } }
+
+.num {
+  font-size: 2rem; }
+
+.del {
+  background-color: #637097;
+  box-shadow: 0px 3px 0px 0px #404e72;
+  font-size: 1rem;
+  color: #fff; }
+
+.reset {
+  flex-grow: 1;
+  background-color: #637097;
+  box-shadow: 0px 3px 0px 0px #404e72;
+  font-size: 1rem;
+  padding: 1rem;
+  color: #fff; }
+
+.equal {
+  flex-grow: 1;
+  background-color: #d03f2f;
+  box-shadow: 0px 3px 0px 0px #93261a;
+  font-size: 1.5rem;
+  color: #fff; }
+
+body.bg2 {
+  background-color: var(--main-bg2); }
+  body.bg2 .theme {
+    color: #000; }
+    body.bg2 .theme h3 {
+      color: #000; }
+    body.bg2 .theme-selection p {
+      color: #000; }
+  body.bg2 .box {
+    background-color: var(--main-bg2-sec); }
+  body.bg2 #screen {
+    background-color: #ededed;
+    color: #000; }
+  body.bg2 .btn-container {
+    background-color: var(--main-bg2-sec); }
+  body.bg2 .reset,
+  body.bg2 .del {
+    background-color: #377f86;
+    box-shadow: 0px 3px 0px 0px #a69d91; }
+  body.bg2 .equal {
+    background-color: #ca5502;
+    box-shadow: 0px 3px 0px 0px #893901; }
+
+body.bg3 {
+  background-color: #160628; }
+  body.bg3 .theme {
+    color: var(--bg3-digits); }
+    body.bg3 .theme h3 {
+      color: var(--bg3-digits); }
+    body.bg3 .theme-selection p {
+      color: var(--bg3-digits); }
+  body.bg3 .box {
+    background-color: #182034; }
+  body.bg3 #circle {
+    background-color: #00e0d1; }
+  body.bg3 #screen {
+    background-color: #1d0934;
+    color: var(--bg3-digits); }
+  body.bg3 .btn-container {
+    background-color: #232c43; }
+  body.bg3 .num {
+    background-color: #341c4f;
+    box-shadow: 0px 3px 0px 0px #871c9c;
+    color: var(--bg3-digits); }
+  body.bg3 .reset,
+  body.bg3 .del {
+    background-color: #58077d;
+    box-shadow: 0px 3px 0px 0px #bc15f4;
+    color: #fff; }
+  body.bg3 .equal {
+    background-color: #00e0d1;
+    box-shadow: 0px 3px 0px 0px #6cf9f2;
+    color: #fff; }
